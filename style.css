@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat;
+  font-family: Poppins;
   text-transform: capitalize;
   border: none;
   transition: .2s linear ease-in-out;
@@ -16,7 +16,7 @@ body {
 
 .container {
   min-height: 100vh;
-  background: url(https://img.freepik.com/free-vector/gradient-light-peach-background_23-2150264672.jpg?t=st=1723222534~exp=1723226134~hmac=e6cac0cd5ec86613995a0337a6e6d8808a8aebae4db4932af8b48e49019775cd&w=1060) no-repeat;
+  background: url(https://gifdb.com/images/high/small-paper-plane-aesthetic-clouds-zi05wm1gdkkzc48v.gif) no-repeat;
   /* background-color: #ffd1d1; */
   background-size: cover;
   background-position: center;
@@ -110,7 +110,7 @@ body {
   background-color: rgba(255, 255, 255, .2);
   border: 1px solid rgba(0, 0, 0, .2);
   text-align: center;
-  color: #fff;
+  color: #303030;
   padding: 10px;
   cursor: pointer;
 }
@@ -118,6 +118,8 @@ body {
 
 .container .row .form .tenure input[type="radio"]:checked + label {
   background-color: rgba(0, 0, 100, .3);
+  color: #fff;
+  transition: 0.5s all;
 }
 
 
