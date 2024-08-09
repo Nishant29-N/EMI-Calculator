@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bc94aa2890.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head> 
+
+<body class="">
+    <div class="container">
+        <div class="row">
+            <div class="form box">
+                <p>Loan Amount (₹)</p>
+                <input type="number" placeholder="Enter Loan Amount" id="amount" min="10000" max="10000000" maxlength="8"
+                    required class="input">
+
+                <p>Interest Rate (%)</p>
+                <input type="number" placeholder="Enter Interest Rate" id="interest" min="1" max="99" maxlength="4" required
+                    class="input" step="0.01">
+
+                <p>Loan Tenure (Yr/Mo)</p>
+                <input type="number" placeholder="Enter Loan Duration" id="loanTenure" min="1" max="360" maxlength="3"
+                    required class="input">
+
+                <div class="tenure">
+                    <input type="radio" name="btn" id="year" checked>
+                    <label for="year">Yearly</label>
+
+                    <input type="radio" name="btn" id="month">
+                    <label for="month">Monthly</label>
+                </div>
+
+                <button class="calculate" id="calculate">Calculate</button>
+                <button class="clear" id="clear">Clear</button>
+            </div>
+
+            <div class="box output">
+                <p>EMI</p>
+                <div class="outputFinal" id="emi"></div>
+
+                
+                <p>Total Interest</p>
+                <div class="outputFinal" id="totalInterest"></div>
+
+                <p>Total Payment</p>
+                <div class="outputFinal" id="totalPayment"></div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Existing form and output boxes here -->
+        
+            <!-- New Save Record button -->
+            <button class="save" id="save">Save Record</button>
+        
+            <!-- Saved Records Section -->
+            <div class="box records">
+                <p>Saved Records</p>
+                <div id="recordsList"></div>
+                <button class="clear-records" id="clearRecords">Clear Records</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
